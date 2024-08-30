@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ba1b35011.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- -------------- Header ---------------- -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="assets/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>FULL-STACK WEB DEVELOPER</p>
+          <h1>
+            Hi, I'm <span>Satyajit</span> <br />Bhunia From West Bengal,
+            <br />India
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------- About ------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate full-stack web developer with a strong focus on
+              building efficient and scalable web applications. With experience
+              in modern JavaScript frameworks like React and Angular, I
+              specialize in creating dynamic, data-driven front-end interfaces.
+              On the back end, I excel in Node.js and Express, designing robust
+              APIs and working with databases such as MongoDB and MySQL
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Full-Stack</span><br />Working Backend/Frontend</li>
+                <li><span>Backend</span><br />Working Server and Databases</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Personal Backend</span><br />4-months</li>
+                <li><span>Personal Full-Stack</span><br />3-months</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Diploma</span><br />2018 - 2021</li>
+                <li><span>B-Tech</span><br />2021 - 2024</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------- Services -------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>Creating Responsive and Interactive User Interfaces</h2>
+            <p>
+              Developing visually appealing, user-friendly interfaces using
+              technologies like HTML, CSS, and JavaScript frameworks (e.g.,
+              React). Ensuring that websites or web applications are responsive,
+              meaning they work well on different devices (e.g., desktops,
+              tablets, smartphones).
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Building and Managing Server-Side Logic</h2>
+            <p>
+              Developing the server-side logic that powers your application
+              using languages and frameworks like Node.js, Express.js. This
+              includes handling database operations, managing APIs, and ensuring
+              secure and efficient server communication.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Database Management</h2>
+            <p>
+              Creating, managing, and optimizing databases using systems like
+              MySQL, PostgreSQL, MongoDB, or Firebase. Ensuring data is stored
+              securely and can be efficiently retrieved, updated, or deleted as
+              needed.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------- Portfolio ------------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/work-1.webp" />
+            <div class="layer">
+              <h3>Real-Estate Web App</h3>
+              <p>A Real-Estate App, Where You Can Find Your Dreams Home.</p>
+              <a href="https://satya-mern-estate.onrender.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-2.jpg" />
+            <div class="layer">
+              <h3>ToDo List Web App</h3>
+              <p>ToDo List App, Where You Can Add Task and Delete.</p>
+              <a href="https://github.com/satyajit98/todoList"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work-3.jpg" />
+            <div class="layer">
+              <h3>A Blog Post App</h3>
+              <p>Blog app, Where you can post your day by day blog.</p>
+              <a href="https://github.com/satyajit98/BlogPost"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -------------- Contact ----------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i> mesatya2000@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> +917318823412</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/satyajit.bhunia.587"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/satyajit98/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/satyajit98"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://x.com/Mesatya98"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+            <a href="assets/Satyajit_resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message "
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Satyajit, Made with
+          <i class="fa-solid fa-heart"></i> by Satyajit Bhunia
+        </p>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
